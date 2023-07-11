@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    
+    <div class="body">
+
+        <div class="header">
+            <div class="logo"><img src="backgroung.png" alt="My Logo"></div>
+            <div class="main-header">
+                <h2>Student Registration Form</h2>
+                <p>Fill out the form below to apply for the training courses. 
+                    You can consider your application accepted after you receive a 
+                    confirmation email. 
+                </p>
+            </div>
+        </div>
+    
+        <div class="form-body">
+    
+            <form action="FormDisplay/formDisplay.html" id="registration-form">
+    
+                <div class="student-info">
+                    
+                    <h3>Student Information</h3>
+                    <div class="name">
+
+                        <input type="text" placeholder="First Name" name="first_name" value="Nkem">
+                        <input type="text" placeholder="Middle Name" name="middle_name" value="Vincent">
+                        <input type="text" placeholder="Last Name" name="last_name" value="Nweke">
+
+                    </div>
+                    
+                    <div class="DOB">
+
+                        <input type="date" placeholder="Date Of Birth" name="date_of_birth" value="1999-10-14">
+                        <input type="text" placeholder="Student ID" name="student_id" value="nkemakolamuko">
+
+                    </div>
+                    
+                </div>
+    
+                <div class="address">
+    
+                    <h3>Address</h3>
+                    <input type="text" placeholder="Street Address" class="str-adr" name="street_address" value="No 12 Nwaobasi Estate, off Ehere Road Ogbor Hill">
+                    <input type="text" placeholder="City" name="city" value="Aba">
+                    <input type="text" placeholder="State/Province" name="state_province" value="Abia State">
+                    <input type="text" placeholder="Country" name="country" value="Nigeria">
+                    <input type="text" placeholder="ZIP Code" name="zip_code" value="450001">
+    
+                </div>
+    
+                <div class="contact-info">
+    
+                    <h3>Contact Information</h3>
+                    <input type="email" placeholder="E-mail" name="email" value="vintio234@gmail.com">
+                    <input type="text" placeholder=" " name="phone" value="08069487650">
+    
+                </div>
+    
+                <div class="courses">
+    
+                    <h3>Courses</h3>
+                    <div class="sub-courses">
+                        <input type="button" value="+ Add new record" id="btn">
+                        <select name="course">
+                            <option value="" disabled selected hidden>Course</option>
+                            <option value="Course-2">Course-2</option>
+                            <option value="Course-3">Course-3</option>
+                            <option value="Course-4">Course-4</option>
+                        </select>
+                        
+                        <select name="level">
+                            <option value="" disabled selected hidden>Level</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Expert">Expert</option>
+                        </select>
+                        
+                        <select name="language">
+                            <option value="" disabled selected hidden>Language</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                        
+                        <input type="date" placeholder="Start Date" id="date" name="start_date">
+    
+                    </div>
+    
+                    <div class="comment">
+                        <textarea placeholder="Comments" style="width: 740px; height: 165px; 
+                        margin-top: 10px;" name="comments">I'm super excited about this opportunity. TIIDELab to the World!!</textarea>
+                    </div>
+    
+                </div>
+                <div class="submit">
+                    <button type="submit">SEND REQUEST</button>
+                </div>
+            </form>
+    
+    
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
